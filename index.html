@@ -1,23 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Save the Date</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
 
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
                 background-color: #FFB6A6;
+                margin: 0;
+                padding: 0;
             }
 
             h1 {
-                font-size: 8em;
+                font-size: clamp(4em, 12vw, 8em);
                 margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: center;
             }
 
             h2 {
-                font-size: 4em;
-                margin-top: 0px;    
+                font-size: clamp(2em, 6vw, 4em);
+                margin-top: 0px;
+                text-align: center;    
             }
 
             .story-script-regular {
@@ -27,6 +40,7 @@
             }
 
             .jessie-and-daniel-image {
+                height: 50vh;
                 animation-name: tilt-shaking;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
@@ -34,7 +48,7 @@
             }
 
             .jessie-and-daniel-image:hover{
-                animation-duration:1s;
+                animation-duration: 0.5s;
             }
 
             .container {
@@ -42,7 +56,8 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 10vh;
+                min-height: 100dvh;
+                padding: 2rem 1rem;
             }
 
             @keyframes tilt-shaking {
@@ -57,10 +72,10 @@
     
     <body>
         <div class="container">
-            <img src="jessieanddaniel.png" class="jessie-and-daniel-image" style="height:60vh">
+            <img src="jessieanddaniel.png" class="jessie-and-daniel-image" alt="Portrait of Jessie and Daniel">
             <section>
                 <h1 class="story-script-regular">Save the Date</h1>
-                <h2 class="story-script-regular" style="text-align: center">29.4.2028 - Auckland, NZ</h2>
+                <h2 class="story-script-regular">29.4.2028 - Auckland, NZ</h2>
             </section>
         </div>
     </body>
