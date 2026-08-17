@@ -15,7 +15,8 @@
             }
 
             body {
-                background-color: #FFB6A6;
+                /* background-color: #FFB6A6; */
+                background: linear-gradient(135deg, #FFE8D6 0%, #FFB6A6 50%, #FFD6C9 100%);
                 margin: 0;
                 padding: 0;
             }
@@ -23,14 +24,18 @@
             h1 {
                 font-size: clamp(4em, 12vw, 8em);
                 margin-bottom: 0px;
-                margin-top: 0px;
+                margin-top: 2rem;
                 text-align: center;
+                color: #8C3A4A;
+                text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
             }
 
             h2 {
                 font-size: clamp(2em, 6vw, 4em);
                 margin-top: 0px;
-                text-align: center;    
+                text-align: center; 
+                letter-spacing: 0.03em;
+                color: #B5495B;
             }
 
             .story-script-regular {
@@ -45,6 +50,7 @@
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
+                filter: drop-shadow(0 8px 24px rgba(0,0,0,0.15))
             }
 
             .jessie-and-daniel-image:hover{
@@ -67,6 +73,28 @@
                 75% { transform: rotate(-5deg); }
                 100% { transform: rotate(0deg); }
             }
+
+            .divider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                max-width: 300px;
+                margin: 0.5rem auto;
+            }
+
+            .divider-line {
+                flex: 1;
+                height: 1px;
+                background: #B5495B;
+                opacity: 0.4;
+            }
+
+            .divider-dot {
+                margin: 0 1rem;
+                color: #B5495B;
+                font-size: 1.2rem;
+            }
         </style>
     </head>
     
@@ -75,6 +103,11 @@
             <img src="jessieanddaniel.png" class="jessie-and-daniel-image" alt="Portrait of Jessie and Daniel">
             <section>
                 <h1 class="story-script-regular">Save the Date</h1>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-dot">♥</span>
+                    <span class="divider-line"></span>
+                </div>
                 <h2 class="story-script-regular">29.4.2028 - Auckland, NZ</h2>
             </section>
         </div>
