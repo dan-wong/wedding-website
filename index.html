@@ -11,7 +11,7 @@
             }
 
             h1 {
-                font-size: 3em;
+                font-size: 5em;
             }
 
             .story-script-regular {
@@ -20,17 +20,35 @@
                 font-style: normal;
             }
 
-            .center {
-                display: grid;
+            .jessie-and-daniel-image {
+                animation-name: tilt-shaking;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+
+            .container {
+                display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
+                margin-top: 10vh;
+            }
+
+            @keyframes tilt-shaking {
+                0% { transform: rotate(0deg); }
+                25% { transform: rotate(5deg); }    
+                50% { transform: rotate(0deg); }
+                75% { transform: rotate(-5deg); }
+                100% { transform: rotate(0deg); }
             }
         </style>
     </head>
     
     <body>
-        <div class="center">
-            <h1 class="story-script-regular">Coming Soon</h1>
+        <div class="container">
+            <img src="jessieanddaniel.png" class="jessie-and-daniel-image" style="height:60vh">
+            <h1 class="story-script-regular">Coming Soon . . .</h1>
         </div>
     </body>
 </html>
